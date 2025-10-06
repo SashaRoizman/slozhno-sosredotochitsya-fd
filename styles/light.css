@@ -12,6 +12,16 @@
 }
 
 :root.theme-light {
+  .decorated-zone::before {
+    border-top: 1px solid var(--title-color);
+    border-right: 1px solid var(--title-color);
+  }
+
+  .decorated-zone::after {
+    border-bottom: 1px solid var(--title-color);
+    border-left: 1px solid var(--title-color);
+  }
+
   .header__theme-menu-button:hover {
     border: 1px solid rgba(50, 49, 45, 0.4);
   }
@@ -35,6 +45,10 @@
   }
 
   .header__theme-menu-item {
+    color: var(--main-text-color);
+  }
+
+  .content-section__title {
     color: var(--main-text-color);
   }
 }

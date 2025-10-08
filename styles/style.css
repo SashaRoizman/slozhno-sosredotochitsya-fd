@@ -10,18 +10,20 @@
 
 .header {
   display: grid;
-  block-size: 100vh;
   position: relative;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .header__rec-label {
   display: flex;
   position: absolute;
-  padding-right: 9px;
   color: var(--accent-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
+  top: 10px;
+  right: 40px;
 }
 
 .header__rec-label::after {
@@ -29,7 +31,7 @@
   position: absolute;
   display: inline-block;
   top: 8px;
-  right: -10px;
+  right: -20px;
   height: 9px;
   width: 9px;
   background-color: var(--accent-color);
@@ -47,8 +49,8 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
+  top: 10px;
+  right: 10px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
@@ -238,7 +240,6 @@
 
 .link:focus-visible {
   outline: 1px solid var(--main-text-color);
-  outline: none;
 }
 
 @media (width >= 768px) {
@@ -248,8 +249,8 @@
   }
 
   .header__rec-label {
-    margin-right: 10px;
-    margin-top: 10px;
+    right: 49px;
+    top: 20px;
   }
 
   .decorated-zone::before {
@@ -385,10 +386,9 @@
     align-self: auto;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-  }
+}
 
 @media (width >= 1024px) {
-
   .header {
     min-block-size: 768px;
   }

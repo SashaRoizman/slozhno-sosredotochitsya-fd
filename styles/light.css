@@ -65,7 +65,7 @@
     display: none;
   }
 
- .decorated-zone::before {
+  .decorated-zone::before {
     border-top: 1px solid var(--title-color);
     border-right: 1px solid var(--title-color);
   }
@@ -104,5 +104,4 @@
   .content-section__title {
     color: var(--main-text-color);
   }
-
-   }
+}
